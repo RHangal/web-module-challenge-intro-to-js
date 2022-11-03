@@ -24,7 +24,7 @@ const votingAge = 20;
 if(votingAge >= 18) {
   console.log("true");
 } else {
-  console.log("false")
+  console.log("false");
 }
 
 /*
@@ -39,8 +39,8 @@ Do the following:
    HINT: no function required
 */
 
-let firstThing = 7
-let secondThing = 13
+let firstThing = 7;
+let secondThing = 13;
 if(firstThing + secondThing > 15) {
   firstThing*= 20;
   console.log(firstThing);
@@ -143,10 +143,26 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
         So, on this one test, the weight would be 4 pounds, and the age would be 1 years old. It's expecting your function to return a decimal number of 0.2
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+function hungryDog(weight, age){
+  if (age >= 1 && weight <= 5) {
+    return weight * 0.05;
+  } else if (age >= 1 && weight <= 10 ) {
+    return weight * 0.04;
+  } else if (age >= 1 && weight <= 15 ) {
+    return weight * 0.03;
+  } else if (age >= 1 && weight > 15 ) {
+    return weight * 0.02;
+  } else if (age >= (7/12)) {
+    return weight * 0.04;
+  } else if (age >= (4/12)) {
+    return weight * 0.05;
+  } else if (age >= (2/12)) {
+    return weight * 0.10;
+  } else {
+    return "You're Puppy is Less than 2months, this function can't help you"
+  }
 }
-
+console.log(hungryDog(10, (1/12)))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
