@@ -260,7 +260,6 @@ function annoyingSong(bottles){
       return bottles + " bottles of soda on the wall, " + bottles + " bottles of soda, take one down pass it around " + (bottles - 1) + " bottles of soda on the wall";
 
 }
-
 console.log(annoyingSong(6));
 
 function Repeat(start){
@@ -296,9 +295,23 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(YourGrade){
+if (YourGrade >= 90){
+  return 'you got an A';
+} else if (YourGrade >= 80){
+  return 'you got a B'
+} else if (YourGrade >= 70){
+  return 'you got a C'
+} else if (YourGrade >= 60){
+  return 'you got a D'
+} else if (YourGrade < 60 && YourGrade >=0){
+  return 'you got an F'
+} else {
+  return 'you input an incorrect grade'
 }
+}
+
+console.log(grade(-7));
 
 
 
