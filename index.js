@@ -78,8 +78,7 @@ Do the following:
 function multiply(num1, num2){
   return num1 * num2;
 }
-
-
+console.log(multiply(4, 5));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -91,9 +90,10 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(HumanAge){
+  return (HumanAge * 7);
 }
+console.log(dogYears(6));
 
 
 
