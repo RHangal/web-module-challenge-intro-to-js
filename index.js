@@ -20,7 +20,12 @@ Do the following:
    HINT: no function required
 */
 
-
+const votingAge = 20;
+if(votingAge >= 18) {
+  console.log("true");
+} else {
+  console.log("false")
+}
 
 /*
 Task 1b - Values (not auto tested)
@@ -33,6 +38,13 @@ Do the following:
 
    HINT: no function required
 */
+
+let firstThing = 7
+let secondThing = 13
+if(firstThing + secondThing > 15) {
+  firstThing*= 20;
+  console.log(firstThing);
+}
 
 
 
@@ -48,7 +60,9 @@ Do the following:
 
    HINT: look up the Number method
 */
-
+let StringValue = "1999"
+let IntegerValue = Number(StringValue);
+console.log(IntegerValue);
 
 
 
